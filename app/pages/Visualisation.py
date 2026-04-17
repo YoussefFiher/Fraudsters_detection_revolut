@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 
 st.title("Data visualisation")
 
-users_df = pd.read_csv("../datasets/users.csv")
-transaction_df = pd.read_csv("../datasets/transactions.csv")
+users_df = pd.read_csv("datasets/users.csv")
+transaction_df = pd.read_csv("datasets/transactions.csv")
 
 fraud_counts = users_df["IS_FRAUDSTER"].value_counts()
 labels = ["Not Fraudster", "Fraudster"]
