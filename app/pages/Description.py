@@ -34,10 +34,10 @@ st.divider()
 st.subheader("download dataset")
 
 # Charger les datasets
-df_users = pd.read_csv("../datasets/users.csv")
-df_transactions = pd.read_csv("../datasets/transactions.csv")
-df_countries = pd.read_csv("../datasets/countries.csv")
-df_currency = pd.read_csv("../datasets/currency_details.csv")
+df_users = pd.read_csv("datasets/users.csv")
+df_transactions = pd.read_csv("datasets/transactions.csv")
+df_countries = pd.read_csv("datasets/countries.csv")
+df_currency = pd.read_csv("datasets/currency_details.csv")
 
 # Convertir en CSV
 csv_users = df_users.to_csv(index=False).encode("utf-8")
