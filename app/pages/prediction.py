@@ -11,7 +11,7 @@ Evaluate the fraud risk of a user by selecting an instance from the dataset, edi
 # -----------------------------
 # Load data, models, scaler
 # -----------------------------
-df = pd.read_csv("../datasets/final_df.csv")
+df = pd.read_csv("datasets/final_df.csv")
 
 models = {
     "Logistic Regression": joblib.load("model/logistic_regression.pkl"),
