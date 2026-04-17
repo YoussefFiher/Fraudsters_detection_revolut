@@ -14,12 +14,12 @@ Evaluate the fraud risk of a user by selecting an instance from the dataset, edi
 df = pd.read_csv("../datasets/final_df.csv")
 
 models = {
-    "Logistic Regression": joblib.load("../model/logistic_regression.pkl"),
-    "Random Forest": joblib.load("../model/random_forest.pkl"),
-    "Gradient Boosting": joblib.load("../model/gradient_boosting.pkl")
+    "Logistic Regression": joblib.load("model/logistic_regression.pkl"),
+    "Random Forest": joblib.load("model/random_forest.pkl"),
+    "Gradient Boosting": joblib.load("model/gradient_boosting.pkl")
 }
 
-scaler = joblib.load("../model/scaler.pkl")
+scaler = joblib.load("model/scaler.pkl")
 
 # -----------------------------
 # Model selection
